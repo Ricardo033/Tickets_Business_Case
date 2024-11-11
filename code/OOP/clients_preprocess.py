@@ -12,7 +12,7 @@ class clients_preprocessing:
     
     def __init__(self):
         #Data Location
-        path="C:/Users/ricar/OneDrive/Escritorio/Masters_of_Statistics/job_positions/Second Attempt/Stratics/data"
+        path="C:/Users/Ricardo Castaneda/IdeaProjects/Tickets_Business_Case/data"
         os.chdir(path)
     
         # Reading Data
@@ -23,7 +23,7 @@ class clients_preprocessing:
         # Replacing blanks for NAN values
         self.clients['age']=self.clients['age'].replace("(blank)",np.nan)
         #Single variable
-        age = self.clients['age']
+        age = self.clients['age']git config --list
         
         #Imputer form sklearn with median to make it robust against outliers
         imputer = SimpleImputer(strategy='median')

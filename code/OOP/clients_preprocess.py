@@ -23,8 +23,8 @@ class clients_preprocessing:
         # Replacing blanks for NAN values
         self.clients['age']=self.clients['age'].replace("(blank)",np.nan)
         #Single variable
-        age = self.clients['age']git config --list
-        
+        age = self.clients['age']
+
         #Imputer form sklearn with median to make it robust against outliers
         imputer = SimpleImputer(strategy='median')
         age2= age.values.reshape(-1, 1)
